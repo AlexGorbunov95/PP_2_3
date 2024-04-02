@@ -21,3 +21,15 @@ Q
 !src/webapp/WEB-INF/pages/Car.html,4\7\470f23467304c8014c7325c2613027b669bb4ddb
 >
 spring-mvc.iml,b\d\bd7f6a500d56ea2dd9f735bf1eb037e6083dd562
+M
+src/main/java/model/User.java,8\e\8e1ebf0166aec1f7f81589f5763cf23a86e9c01e
+N
+src/main/java/dao/UserDao.java,0\7\07b569a91dddefed96c2d80d4dbb6faf84a19567
+Q
+!src/main/java/dao/UserDaoimp.java,5\4\5466cf63d53a60857563e5333dfeb385cbf86161
+V
+&src/main/java/service/UserService.java,f\2\f2bf6a3d9f14ae9a85e78a6ec1a3f81261e3329c
+Y
+)src/main/java/service/UserServiceImp.java,e\2\e25272723511564b1e5b007fe85aceed52b4b330
+]
+-src/main/java/web/config/HibernateConfig.java,1\6\162e7782ef37ad833170b5132022e2d6f4bb5950

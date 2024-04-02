@@ -11,20 +11,20 @@ import service.ServiceCarImp;
 
 @Controller
 public class CarsController {
-    @Autowired
-    private ServiceCarImp serviceCarImp;
-
-    public CarsController(ServiceCarImp serviceCarImp) {
-        this.serviceCarImp = serviceCarImp;
-    }
-
-    @GetMapping(value = "/cars")
-    public String printCars(@RequestParam(required = false) Integer count, Model model) {
-        if (count == null) {
-            model.addAttribute("cars", serviceCarImp.addCar());
-        } else {
-            model.addAttribute("cars", serviceCarImp.getCarCount(count));
-        }
-        return "Car";
-    }
+//    @Autowired
+//    private ServiceCarImp serviceCarImp;
+//
+//    public CarsController(ServiceCarImp serviceCarImp) {
+//        this.serviceCarImp = serviceCarImp;
+//    }
+//
+//    @GetMapping(value = "/cars")
+//    public String printCars(@RequestParam(required = false) Integer count, Model model) {
+//        if (count == null) {
+//            model.addAttribute("cars", serviceCarImp.addCar());
+//        } else {
+//            model.addAttribute("cars", serviceCarImp.getCarCount(count));
+//        }
+//        return "Car";
+//    }
 }
