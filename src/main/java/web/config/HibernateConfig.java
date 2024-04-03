@@ -1,5 +1,6 @@
 package web.config;
 
+import model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -22,8 +23,8 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
 @PropertySource(value = {"classpath:hibernate.properties"})
-@ComponentScan({"web"})
-//@EnableJpaRepositories(basePackages = {"web","dao"})
+@ComponentScan({"web","dao","service"})
+//@EnableJpaRepositories(basePackages = {"dao"})
 public class HibernateConfig {
     private Environment environment;
 
@@ -54,6 +55,7 @@ public class HibernateConfig {
         return entityManagerFactory;
     }
 
+
     @Bean
     public Properties jpaProperties() {
         final Properties properties = new Properties();
@@ -75,4 +77,7 @@ public class HibernateConfig {
     public PersistenceExceptionTranslationPostProcessor exceptionTranslation() {
         return new PersistenceExceptionTranslationPostProcessor();
     }
+
+
+
 }

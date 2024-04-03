@@ -1,4 +1,5 @@
 
+D
+java:S1128"'Remove this unused import 'model.User'.(˜Ğ ñ8ÀÖ…£ê1
 ƒ
-java:S1128
-"aRemove this unused import 'org.springframework.data.jpa.repository.config.EnableJpaRepositories'.(²œ˜üÿÿÿÿ8ËŸı…ê1
+java:S1128"aRemove this unused import 'org.springframework.data.jpa.repository.config.EnableJpaRepositories'.(²œ˜üÿÿÿÿ8ÁÖ…£ê1

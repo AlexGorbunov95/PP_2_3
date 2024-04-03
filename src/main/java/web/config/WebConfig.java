@@ -33,7 +33,7 @@ import java.util.Properties;
 @Configuration
 //@EnableTransactionManagement(proxyTargetClass = true)
 @EnableWebMvc
-@ComponentScan({"web","service"})
+@ComponentScan({"web","dao","service"})
 //@PropertySource("classpath:hibernate.properties")
 public class WebConfig implements WebMvcConfigurer {
 
