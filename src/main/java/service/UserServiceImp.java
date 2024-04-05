@@ -9,16 +9,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-@Component
-@Transactional(readOnly = true)
 
+
+@Service("userService")
 public class UserServiceImp implements UserService {
-@Autowired(required = false)
-   private UserDao userDao;
+@Autowired
+    private UserDao userDao;
 
-    public UserServiceImp(UserDao userDao) {
-        this.userDao = userDao;
-    }
 
 
     @Transactional

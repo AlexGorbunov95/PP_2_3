@@ -7,8 +7,13 @@
 </head>
 <body>
 <div>
+    <b th:text="ID"></b>
     <th:block th:each="users : ${users}">
-        <a th:text="${users.getName}"></a>
+        <j th:text="${users.getId}">user</j>
+        <j th:text="${users.getName}">user</j>
+        <j th:text="${users.getLastName}">user</j>
+        <j th:text="${users.getAge}">user</j>
+
     </th:block>
 </div>
 </body>

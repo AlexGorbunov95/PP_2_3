@@ -1,28 +1,7 @@
 
-]	java:S125)"<This block of commented-out lines of code should be removed.(ù×ş·úÿÿÿÿ8æ†Æ…ê1
-X	java:S125-"<This block of commented-out lines of code should be removed.(ûšÇ¡8¨œÆ…ê1
-W	java:S125J"<This block of commented-out lines of code should be removed.(“ÜO8ùş„ê1
-o
-java:S1128	"RRemove this unused import 'org.springframework.context.annotation.PropertySource'.(™¢˜é8³œÆ…ê1
-u
-java:S1128"XRemove this unused import 'org.springframework.jdbc.datasource.DriverManagerDataSource'.(æ´Ô½8³œÆ…ê1
 x
-java:S1128"[Remove this unused import 'org.springframework.orm.hibernate5.HibernateTransactionManager'.(˜Ÿñª8³œÆ…ê1
+java:S1128"[Remove this unused import 'org.springframework.orm.hibernate5.HibernateTransactionManager'.(˜Ÿñª8ñ¶‡İê1
 t
-java:S1128"WRemove this unused import 'org.springframework.orm.hibernate5.LocalSessionFactoryBean'.(ÏÒÅÑ8³œÆ…ê1
-p
-java:S1128"NRemove this unused import 'org.springframework.orm.jpa.JpaTransactionManager'.(İÑàÿÿÿÿÿ8´œÆ…ê1
-|
-java:S1128"_Remove this unused import 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean'.(£õÕ–8´œÆ…ê1
-t
-java:S1128"WRemove this unused import 'org.springframework.transaction.PlatformTransactionManager'.(…­ÀŞ8´œÆ…ê1
-€
-java:S1128"cRemove this unused import 'org.springframework.transaction.annotation.EnableTransactionManagement'.(‘Ó¼8µœÆ…ê1
-`
-java:S1128"CRemove this unused import 'javax.persistence.EntityManagerFactory'.(îÜğ8µœÆ…ê1
-S
-java:S1128"1Remove this unused import 'javax.sql.DataSource'.(ÉòÂ¿úÿÿÿÿ8µœÆ…ê1
+java:S1128"WRemove this unused import 'org.springframework.orm.hibernate5.LocalSessionFactoryBean'.(ÏÒÅÑ8ò¶‡İê1
 K
-java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8µœÆ…ê1
-N
-java:S1128"1Remove this unused import 'java.util.Properties'.(¬µ²8µœÆ…ê1
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8ò¶‡İê1

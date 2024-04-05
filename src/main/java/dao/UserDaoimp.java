@@ -1,6 +1,7 @@
 package dao;
 
 import model.User;
+import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -12,25 +13,28 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
-@Component
+@Repository
 public class UserDaoimp implements UserDao {
 
-    @Autowired(required = false)
-    private EntityManager entityManager;
-
-
-
-
-    @Override
-    public void add(User user) {
-entityManager.persist(user);
+    private final EntityManager entityManager;
+@Autowired
+    public UserDaoimp(EntityManager entityManager) {
+        this.entityManager = entityManager;
     }
 
+
+    @Transactional
+    @Override
+    public void add(User user) {
+//        Session session = entityManager.unwrap(Session.class);
+//        session.save(user);
+        entityManager.persist(user);
+    }
+
+    @Transactional
     @Override
     @SuppressWarnings("unchecked")
     public List<User> listUsers() {
-
-    List<User> users = entityManager.createQuery("SELECT u FROM User u", User.class).getResultList();
-    return users;
+        return entityManager.createQuery("SELECT u FROM User u", User.class).getResultList();
 }
 }

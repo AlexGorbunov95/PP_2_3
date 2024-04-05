@@ -1,15 +1,12 @@
 
-
-java:S1488!"]Immediately return this expression instead of assigning it to the temporary variable "users".(ş¸ÜÑşÿÿÿÿ8Ôš›ê1
-d
-java:S6813"BRemove this field injection and use constructor injection instead.(æîşÿÿÿÿÿ8¸»£ê1
+]	java:S125"<This block of commented-out lines of code should be removed.(ÎÍ§˜ûÿÿÿÿ8ˆñªİê1
+T
+java:S1128"2Remove this unused import 'org.hibernate.Session'.(È¹›§ùÿÿÿÿ8ğ’±İê1
 u
-java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Qualifier'.(íàÄ®ıÿÿÿÿ8¦íŸê1
-h
-java:S1128"FRemove this unused import 'org.springframework.stereotype.Repository'.(¦ıÍıüÿÿÿÿ8àö‰Ÿê1
-w
-java:S1128"URemove this unused import 'org.springframework.transaction.annotation.Transactional'.(ğùçøùÿÿÿÿ8áö‰Ÿê1
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Qualifier'.(íàÄ®ıÿÿÿÿ8ğ’±İê1
+g
+java:S1128"ERemove this unused import 'org.springframework.stereotype.Component'.(Ş÷Ñ¸ÿÿÿÿÿ8ğ’±İê1
 c
-java:S1128"ARemove this unused import 'javax.persistence.PersistenceContext'.(ê°İÒıÿÿÿÿ8âö‰Ÿê1
+java:S1128"ARemove this unused import 'javax.persistence.PersistenceContext'.(ê°İÒıÿÿÿÿ8ğ’±İê1
 V
-java:S1128"9Remove this unused import 'javax.persistence.TypedQuery'.(—Ğİ¦8åö‰Ÿê1
+java:S1128"9Remove this unused import 'javax.persistence.TypedQuery'.(—Ğİ¦8ñ’±İê1
