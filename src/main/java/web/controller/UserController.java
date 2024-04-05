@@ -18,25 +18,34 @@ public class UserController {
 
 
 
-    @GetMapping(value = "/user")
+// Все юзеры
+@GetMapping(value = "/")
     public String index(Model model){
     model.addAttribute("users", userService.listUsers());
         return "users";
     }
 
-
+    // добавить юзера
     @GetMapping (value = "/new")
     public String newUser(Model model ){
      model.addAttribute("newUser",new User());
-
-
-return "new";
+     return "new";
     }
-
+//добавить юзера
     @PostMapping(value = "/create")
     public String create(@ModelAttribute("newUser") User user){
     userService.add(user);
-    return "users";
+    return "redirect:/";
     }
 
+    @GetMapping(value = "/del")
+    public String removeUserById(Model model){
+   model.addAttribute("del", new User());
+   return "delete";
+}
+@PostMapping(value = "/delete")
+public String removeUserById(@ModelAttribute("del") Long id){
+    userService.removeUserById(id);
+    return "redirect:/";
+}
 }

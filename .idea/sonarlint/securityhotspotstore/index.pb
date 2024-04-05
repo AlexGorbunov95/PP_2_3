@@ -31,3 +31,5 @@ S
 #src/webapp/WEB-INF/pages/users.html,6\c\6c906ce33332fe66a53de891e23cb1a2c9eb810f
 Q
 !src/webapp/WEB-INF/pages/new.html,8\7\87ef5cb3bc185ef4eab4c41cb66bcb82d418c5d7
+T
+$src/webapp/WEB-INF/pages/delete.html,1\3\13f96b1e0f671d77018e2869c02973cce8147abd

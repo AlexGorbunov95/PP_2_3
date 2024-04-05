@@ -6,15 +6,27 @@
     <title>USERS</title>
 </head>
 <body>
+<table>
+<thead>
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Lastname</th>
+    <th>Age</th>
+</tr>
+</thead>
 <div>
-    <b th:text="ID"></b>
-    <th:block th:each="users : ${users}">
-        <j th:text="${users.getId}">user</j>
-        <j th:text="${users.getName}">user</j>
-        <j th:text="${users.getLastName}">user</j>
-        <j th:text="${users.getAge}">user</j>
-
-    </th:block>
+    <tr th:block th:each="users : ${users}">
+        <td th:text="${users.getId}">user</td>
+        <td th:text="${users.getName}">user</td>
+        <td th:text="${users.getLastName}">user</td>
+        <td th:text="${users.getAge}">user</td>
+    </tr>
+        </th:block>
 </div>
+    <a th:href="@{/new}">NEW USER</a>
+    <br/>
+    <a th:href="@{/del}">DELETE USER</a>
+</table>
 </body>
 </html>

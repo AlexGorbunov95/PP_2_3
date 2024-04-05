@@ -13,19 +13,21 @@ import java.util.List;
 
 @Service("userService")
 public class UserServiceImp implements UserService {
-@Autowired
+    @Autowired
     private UserDao userDao;
 
-
-
-    @Transactional
     @Override
     public void add(User user) {
         userDao.add(user);
     }
-    @Transactional(readOnly = true)
+
     @Override
     public List<User> listUsers() {
         return userDao.listUsers();
+    }
+
+    @Override
+    public void removeUserById(long id) {
+        userDao.removeUserById(id);
     }
 }

@@ -26,8 +26,6 @@ public class UserDaoimp implements UserDao {
     @Transactional
     @Override
     public void add(User user) {
-//        Session session = entityManager.unwrap(Session.class);
-//        session.save(user);
         entityManager.persist(user);
     }
 
@@ -37,4 +35,10 @@ public class UserDaoimp implements UserDao {
     public List<User> listUsers() {
         return entityManager.createQuery("SELECT u FROM User u", User.class).getResultList();
 }
+
+    @Override
+    public void removeUserById(long id) {
+    User user = entityManager.find(User.class,id);
+    entityManager.remove(user);
+    }
 }
