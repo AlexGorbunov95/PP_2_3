@@ -10,16 +10,16 @@ import org.springframework.web.bind.annotation.*;
 import service.UserService;
 
 
-@Controller
-@RequestMapping("/")
-public class UserController {
-@Autowired
+    @Controller
+    @RequestMapping("/")
+    public class UserController {
+
+    @Autowired
     private UserService userService;
 
+    // Все юзеры
 
-
-// Все юзеры
-@GetMapping(value = "/")
+        @GetMapping(value = "/")
     public String index(Model model){
     model.addAttribute("users", userService.listUsers());
         return "users";
@@ -28,8 +28,8 @@ public class UserController {
     // добавить юзера
     @GetMapping (value = "/new")
     public String newUser(Model model ){
-     model.addAttribute("newUser",new User());
-     return "new";
+    model.addAttribute("newUser",new User());
+    return "new";
     }
 //добавить юзера
     @PostMapping(value = "/create")
@@ -38,14 +38,31 @@ public class UserController {
     return "redirect:/";
     }
 
-    @GetMapping(value = "/del")
-    public String removeUserById(Model model){
-   model.addAttribute("del", new User());
-   return "delete";
-}
-@PostMapping(value = "/delete")
-public String removeUserById(@ModelAttribute("del") Long id){
-    userService.removeUserById(id);
-    return "redirect:/";
-}
+// изменить юзера
+    @GetMapping(value = "/editUser")
+    public String edit(@RequestParam("id") Long id, Model model){
+       User user = userService.showUser(id);
+        model.addAttribute("editUser", user);
+        return "edit";
+        }
+
+        //изменить юзера
+    @PostMapping(value = "/update")
+    public String update(@ModelAttribute("editUser") User user,Long id) {
+            userService.update(id, user);
+        return "redirect:/";
+    }
+
+        @GetMapping(value = "/deleteUser")
+        public String delete(@RequestParam("id") Long id, Model model){
+            User user = userService.showUser(id);
+            userService.delete(id);
+            model.addAttribute("deleteUser", user);
+            return "redirect:/";
+        }
+        @PostMapping(value = "/delete")
+        public String del(@ModelAttribute("deleteUser") User user,Long id) {
+            userService.delete(id);
+            return "redirect:/";
+        }
 }

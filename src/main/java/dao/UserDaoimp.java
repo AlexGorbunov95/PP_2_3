@@ -35,10 +35,26 @@ public class UserDaoimp implements UserDao {
     public List<User> listUsers() {
         return entityManager.createQuery("SELECT u FROM User u", User.class).getResultList();
 }
-
+@Transactional(readOnly = true)
     @Override
-    public void removeUserById(long id) {
-    User user = entityManager.find(User.class,id);
-    entityManager.remove(user);
+    public User showUser(long id) {
+    return entityManager.find(User.class,id);
+
     }
+    @Transactional
+    @Override
+    public void update(Long id, User updateUser) {
+       User udateUserId=showUser(id);
+       udateUserId.setName(updateUser.getName());
+        udateUserId.setLastName(updateUser.getLastName());
+        udateUserId.setAge(updateUser.getAge());
+
+    }
+
+    @Transactional
+    @Override
+    public void delete(Long id) {
+        entityManager.remove(entityManager.find(User.class,id));
+    }
+
 }

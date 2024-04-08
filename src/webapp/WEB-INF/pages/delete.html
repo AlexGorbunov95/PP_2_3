@@ -5,18 +5,14 @@
     <meta charset="UTF-8">
     <title>NEW USER</title>
 </head>
-<thead>
-<tr>
-    <th>enter ID</th>
-</tr>
-</thead>
 <body>
-<form th:method="POST" th:action="@{/delete}" th:object="${del}">
-    <label for="id">DELETE</label>
-    <input type="text" th:field="*{id}" id="id"/>
+<form th:method="POST" th:action="@{/delete}" th:object="${deleteUser}">
+    <input type="hidden" th:field="*{id}"/>
+    <!--    <label for="id">DELETE</label>-->
+<!--    <input type="text" th:field="*{id}" id="id"/>-->
 
 
-    <input type="submit" value="DELETE USER"/>
+<!--    <input type="submit" value="DELETE USER"/>-->
 </form>
 </body>
 </html>

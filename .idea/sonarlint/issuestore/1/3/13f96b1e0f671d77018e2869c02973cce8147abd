@@ -1,4 +1,5 @@
 
 a	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(–Ô©şÿÿÿÿ8Ìù¤îê1
-n Web:TableHeaderHasIdOrScopeCheck
-";Add either an 'id' or a 'scope' attribute to this <th> tag.(±€÷ü8îÅîê1
+UWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(¥Íÿÿÿÿÿ8ú° Üë1
+PWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(šÚûª8ú° Üë1
+PWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(èŞÈÿ8û° Üë1

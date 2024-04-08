@@ -13,20 +13,26 @@
     <th>Name</th>
     <th>Lastname</th>
     <th>Age</th>
+    <th>Operations</th>
 </tr>
 </thead>
-<div>
+    <div>
     <tr th:block th:each="users : ${users}">
         <td th:text="${users.getId}">user</td>
         <td th:text="${users.getName}">user</td>
         <td th:text="${users.getLastName}">user</td>
         <td th:text="${users.getAge}">user</td>
+        <td>
+            <a th:href="@{/editUser/(id=${users.getId()})}" style="color: blue">EDIT</a>
+            <a th:href="@{/deleteUser/(id=${users.getId()})}" style="color: darkred">DELETE</a>
+        </td>
     </tr>
-        </th:block>
 </div>
-    <a th:href="@{/new}">NEW USER</a>
+
+    <a th:href="@{/new}" style="color: green">NEW USER</a>
     <br/>
-    <a th:href="@{/del}">DELETE USER</a>
+
+
 </table>
 </body>
 </html>

@@ -3,12 +3,8 @@
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 W
 'src/main/java/web/config/WebConfig.java,3\e\3efd7d6e4f4347a5e7aa33a6e6490dc8c1f9ed56
-a
-1src/main/java/web/controller/HelloController.java,e\f\ef6e5829e13a1b2210c10163cf32eb47fd077f01
 U
 %src/main/java/web/config/AppInit.java,8\0\80eab4da9923cdcbe5b2defa94177731b9a847e5
-S
-#src/webapp/WEB-INF/pages/index.html,c\d\cdc3599f1e9a5184dd1944b4ab31b6016e63a46f
 >
 spring-mvc.iml,b\d\bd7f6a500d56ea2dd9f735bf1eb037e6083dd562
 M
@@ -33,3 +29,5 @@ Q
 !src/webapp/WEB-INF/pages/new.html,8\7\87ef5cb3bc185ef4eab4c41cb66bcb82d418c5d7
 T
 $src/webapp/WEB-INF/pages/delete.html,1\3\13f96b1e0f671d77018e2869c02973cce8147abd
+R
+"src/webapp/WEB-INF/pages/edit.html,9\1\91fab5bfc20ad6d95e9f1b7b152d5c105fa4abf5
