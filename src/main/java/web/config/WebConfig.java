@@ -11,8 +11,6 @@ import org.springframework.core.env.Environment;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.orm.hibernate5.HibernateTransactionManager;
-import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
@@ -28,26 +26,24 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
-import java.util.Objects;
 import java.util.Properties;
-
-
 
 
 @Configuration
 @EnableTransactionManagement(proxyTargetClass = true)
 @EnableJpaRepositories("dao")
 @EnableWebMvc
-@ComponentScan({"web","dao","service"})
+@ComponentScan({"web", "dao", "service"})
 @PropertySource("classpath:hibernate.properties")
 public class WebConfig implements WebMvcConfigurer {
 
     private final ApplicationContext applicationContext;
-   private final Environment environment;
-@Autowired
+    private final Environment environment;
+
+    @Autowired
     public WebConfig(ApplicationContext applicationContext, Environment environment) {
         this.applicationContext = applicationContext;
-       this.environment = environment;
+        this.environment = environment;
     }
 
 
@@ -75,7 +71,8 @@ public class WebConfig implements WebMvcConfigurer {
         resolver.setTemplateEngine(templateEngine());
         registry.viewResolver(resolver);
     }
-@Bean
+
+    @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(environment.getRequiredProperty("db.driver"));

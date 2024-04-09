@@ -1,18 +1,0 @@
-
-]	java:S125%"<This block of commented-out lines of code should be removed.(Ïáûúÿÿÿÿ8Å·Óšê1
-]	java:S125+"<This block of commented-out lines of code should be removed.(¹ğÙµüÿÿÿÿ8àÉÒšê1
-u
-java:S1128"SRemove this unused import 'org.springframework.web.filter.CharacterEncodingFilter'.(¸‰²ıüÿÿÿÿ8Æ·Óšê1
-t
-java:S1128"RRemove this unused import 'org.springframework.web.filter.HiddenHttpMethodFilter'.(šçÇŸıÿÿÿÿ8Æ·Óšê1
-V
-java:S1128"9Remove this unused import 'javax.servlet.DispatcherType'.(ìâ°ù8Ç·Óšê1
-_
-java:S1128"=Remove this unused import 'javax.servlet.FilterRegistration'.(£¼³˜üÿÿÿÿ8Ç·Óšê1
-V
-java:S1128	"9Remove this unused import 'javax.servlet.ServletContext'.(á¡æŞ8Ç·Óšê1
-X
-java:S1128
-";Remove this unused import 'javax.servlet.ServletException'.(Š‰™Œ8Ç·Óšê1
-P
-java:S1128".Remove this unused import 'java.util.EnumSet'.(ÍäÚ“úÿÿÿÿ8Ç·Óšê1

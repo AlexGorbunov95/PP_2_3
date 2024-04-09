@@ -7,17 +7,17 @@
 </head>
 <body>
 <form th:method="POST" th:action="@{/create}" th:object="${newUser}">
-   <label for="name">     NAME</label>
+    <label for="name"> NAME</label>
     <input type="text" th:field="*{name}" id="name"/>
 
     <br/>
 
-    <label for="lastName">    LASTNAME</label>
+    <label for="lastName"> LASTNAME</label>
     <input type="text" th:field="*{lastName}" id="lastName"/>
 
     <br/>
 
-    <label for="age">    AGE</label>
+    <label for="age"> AGE</label>
     <input type="text" th:field="*{age}" id="age"/>
 
     <br/>

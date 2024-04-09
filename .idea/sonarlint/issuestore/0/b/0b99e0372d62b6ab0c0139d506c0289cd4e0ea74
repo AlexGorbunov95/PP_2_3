@@ -1,15 +1,9 @@
 
 h
-java:S1192&"KDefine a constant instead of duplicating this literal "redirect:/" 4 times.(äÔ¶½8ºüïğë1
+java:S1192%"KDefine a constant instead of duplicating this literal "redirect:/" 3 times.(äÔ¶½8ºüïğë1
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Îüïğë1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Îüïğë1
 \
-java:S4684$"@Replace this persistent entity with a simple POJO or DTO object.(àüúv8Ûüïğë1
+java:S4684#"@Replace this persistent entity with a simple POJO or DTO object.(àüúv8Ûüïğë1
 b
-java:S46843"@Replace this persistent entity with a simple POJO or DTO object.(»ºÅüÿÿÿÿ8ßüïğë1
-b
-java:S4684@"@Replace this persistent entity with a simple POJO or DTO object.(¨÷şŞşÿÿÿÿ8ãüïğë1
-E
-java:S1128"(Remove this unused import 'dao.UserDao'.(º­Æè8è”ğğë1
-g
-java:S1128"ERemove this unused import 'org.springframework.stereotype.Component'.(Ş÷Ñ¸ÿÿÿÿÿ8è”ğğë1
+java:S46842"@Replace this persistent entity with a simple POJO or DTO object.(»ºÅüÿÿÿÿ8ßüïğë1

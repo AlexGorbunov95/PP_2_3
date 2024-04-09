@@ -7,27 +7,27 @@
 </head>
 <body>
 <table>
-<thead>
-<tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Lastname</th>
-    <th>Age</th>
-    <th>Operations</th>
-</tr>
-</thead>
-    <div>
-    <tr th:block th:each="users : ${users}">
-        <td th:text="${users.getId}">user</td>
-        <td th:text="${users.getName}">user</td>
-        <td th:text="${users.getLastName}">user</td>
-        <td th:text="${users.getAge}">user</td>
-        <td>
-            <a th:href="@{/editUser/(id=${users.getId()})}" style="color: blue">EDIT</a>
-            <a th:href="@{/deleteUser/(id=${users.getId()})}" style="color: darkred">DELETE</a>
-        </td>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>Operations</th>
     </tr>
-</div>
+    </thead>
+    <div>
+        <tr th:block th:each="users : ${users}">
+            <td th:text="${users.getId}">user</td>
+            <td th:text="${users.getName}">user</td>
+            <td th:text="${users.getLastName}">user</td>
+            <td th:text="${users.getAge}">user</td>
+            <td>
+                <a th:href="@{/editUser/(id=${users.getId()})}" style="color: blue">EDIT</a>
+                <a th:href="@{/deleteUser/(id=${users.getId()})}" style="color: darkred">DELETE</a>
+            </td>
+        </tr>
+    </div>
 
     <a th:href="@{/new}" style="color: green">NEW USER</a>
     <br/>

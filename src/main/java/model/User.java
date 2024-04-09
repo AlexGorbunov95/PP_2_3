@@ -1,8 +1,5 @@
 package model;
 
-
-import org.springframework.lang.NonNull;
-
 import javax.persistence.*;
 
 @Entity
@@ -12,11 +9,11 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
-@Column(name = "name")
+    @Column(name = "name")
     private String name;
-@Column(name = "last_name")
-private String lastName;
-@Column(name = "age")
+    @Column(name = "last_name")
+    private String lastName;
+    @Column(name = "age")
     private int age;
 
     public User() {

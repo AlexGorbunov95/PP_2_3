@@ -1,23 +1,19 @@
 package dao;
 
 import model.User;
-import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Repository
 public class UserDaoimp implements UserDao {
 
     private final EntityManager entityManager;
-@Autowired
+
+    @Autowired
     public UserDaoimp(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
@@ -34,18 +30,20 @@ public class UserDaoimp implements UserDao {
     @SuppressWarnings("unchecked")
     public List<User> listUsers() {
         return entityManager.createQuery("SELECT u FROM User u", User.class).getResultList();
-}
-@Transactional(readOnly = true)
+    }
+
+    @Transactional(readOnly = true)
     @Override
     public User showUser(long id) {
-    return entityManager.find(User.class,id);
+        return entityManager.find(User.class, id);
 
     }
+
     @Transactional
     @Override
     public void update(Long id, User updateUser) {
-       User udateUserId=showUser(id);
-       udateUserId.setName(updateUser.getName());
+        User udateUserId = showUser(id);
+        udateUserId.setName(updateUser.getName());
         udateUserId.setLastName(updateUser.getLastName());
         udateUserId.setAge(updateUser.getAge());
 
@@ -54,7 +52,7 @@ public class UserDaoimp implements UserDao {
     @Transactional
     @Override
     public void delete(Long id) {
-        entityManager.remove(entityManager.find(User.class,id));
+        entityManager.remove(entityManager.find(User.class, id));
     }
 
 }
